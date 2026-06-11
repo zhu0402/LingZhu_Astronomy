@@ -15,6 +15,8 @@ export default function MemberCard({
         <img 
           src={photo} 
           alt={primaryName} 
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover transition-all duration-1000 transform-gpu
                /* 默认状态：低亮度 */
                brightness-[0.75] saturate-[0.8] scale-100

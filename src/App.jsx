@@ -10,7 +10,7 @@ import ScrollReveal from './components/ScrollReveal';
 import { useTranslation } from './hooks/useTranslation';
 
 export default function App() {
-  const { lang, toggleLanguage, header, footer, research: resConfig, member: memConfig } = useTranslation();
+  const { lang, toggleLanguage, header, research: resConfig, member: memConfig } = useTranslation();
 
   return (
     <div className="bg-[#101b39] min-h-screen text-[#e9e8ee] selection:bg-cyan-500/30 overflow-x-hidden font-sans relative">

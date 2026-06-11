@@ -61,7 +61,7 @@ export default function ResearchItem({
                 {(isExpanded || (typeof window !== 'undefined' && window.innerWidth >= 1024)) && (
                   <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="pt-6 space-y-10">
                     <div className="relative overflow-hidden border border-white/5 bg-[#050a18]/50 group">
-                      <img src={image} alt={title} className="w-full aspect-video lg:aspect-[21/9] object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-1000" />
+                      <img src={image} alt={title} loading="lazy" decoding="async" className="w-full aspect-video lg:aspect-[21/9] object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-1000" />
                     </div>
                     <a href={link} target="_blank" rel="noreferrer" className="text-[11px] font-[500] tracking-[0.3em] text-white/60 hover:text-cyan-400 transition-all uppercase inline-flex items-center gap-2">
                       {linkText} <span>→</span>

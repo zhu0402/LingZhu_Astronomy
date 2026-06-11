@@ -5,21 +5,20 @@ export default function ScrollReveal({ children, delay = 0 }) {
   const ref = useRef(null);
 
   useEffect(() => {
+    const current = ref.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-        } else {
-          // 如果想让页面往回滚动时也重复动画，保留下面这行；否则删掉。
-          setIsVisible(false);
+          observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.15 } // 元素进入 15% 时触发
+      { threshold: 0.15 }
     );
 
-    if (ref.current) observer.observe(ref.current);
+    if (current) observer.observe(current);
     return () => {
-      if (ref.current) observer.unobserve(ref.current);
+      if (current) observer.unobserve(current);
     };
   }, []);
 

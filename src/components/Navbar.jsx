@@ -17,11 +17,7 @@ export default function Navbar({ onToggleLanguage, currentLang, header }) {
     // 强制滚动到顶部
     window.scrollTo({ top: 0, behavior: 'smooth' });
     
-    // 模拟重新加载效果
-    setTimeout(() => {
-      window.location.hash = ''; 
-      window.location.reload(); 
-    }, 600);
+    window.location.hash = '';
     
     if (active) setActive(false);
   };
