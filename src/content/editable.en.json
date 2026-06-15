@@ -109,9 +109,9 @@
   },
   "footer": {
     "brand": {
-      "line1": "Galaxy Dynamics Group",
+      "line1": "Galaxy structure and dynamics Group ",
       "line2": "SHAO",
-      "orgName": "Shanghai Astronomical Observatory, Chinese Academy of Sciences",
+      "orgName": "16th Floor, Astronomy Building, Shanghai Astronomical Observatory, Chinese Academy of Sciences",
       "address": "80 Nandan Road, Xuhui District, Shanghai 200030, China",
       "locationLabel": "LOC.",
       "mapUrl": "https://api.map.baidu.com/direction?destination=上海天文台&mode=driving&region=上海&output=html&src=webapp.baidu.openAPIdemo"
