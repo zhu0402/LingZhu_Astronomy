@@ -20,12 +20,12 @@ export default function ResearchItem({
   const [isExpanded, setIsExpanded] = useState(false);
   const bgColor = index % 2 === 0 ? 'bg-[#0a1229]' : 'bg-[#101b39]';
 
-  // 处理编号逻辑
+  // Implementation note.
   const displayIndex = (index + 1).toString().padStart(2, '0');
 
   return (
     <section className={`relative min-h-screen flex flex-col justify-center ${bgColor} overflow-hidden border-b border-white/5`}>
-      {/* 背景纹理 */}
+      {/* Internal layout marker. */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:60px_60px]"></div>
       </div>
@@ -49,7 +49,7 @@ export default function ResearchItem({
                 {description}
               </p>
               
-              {/* 移动端展开按钮 - 动态文本 */}
+              {/* Internal layout marker. */}
               <button 
                 onClick={() => setIsExpanded(!isExpanded)} 
                 className="mt-6 text-[10px] tracking-[0.3em] uppercase text-cyan-500/80 lg:hidden underline"
@@ -74,7 +74,7 @@ export default function ResearchItem({
         </div>
       </div>
 
-      {/* 加载更多按钮：与 Member 部分保持一致格式 */}
+      {/* Internal layout marker. */}
       {isLastVisible && hasMore && (
         <div className="pt-10 flex justify-center">
           <button onClick={onLoadMore} className="group flex flex-col items-center gap-4 transition-all">

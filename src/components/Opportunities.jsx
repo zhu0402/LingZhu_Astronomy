@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ScrollReveal from './ScrollReveal';
-import { useTranslation } from '../hooks/useTranslation'; // 1. 引入 Hook
+import { useTranslation } from '../hooks/useTranslation'; // Implementation note.
 
 export default function Opportunities() {
-  // 2. 从 Hook 中解构获取当前语言对应的 opportunities 配置
+  // Implementation note.
   const { opportunities: opp } = useTranslation(); 
   
   const [isExpanded, setIsExpanded] = useState(false);
@@ -17,7 +17,7 @@ export default function Opportunities() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // 3. 动态截断逻辑（中文和英文的截断长度可以根据需要微调）
+  // Implementation note.
   const displayContent = isMobile && !isExpanded 
     ? opp.content.slice(0, 160) + "..." 
     : opp.content;
@@ -45,7 +45,7 @@ export default function Opportunities() {
                 onClick={() => setIsExpanded(!isExpanded)} 
                 className="mt-6 text-[10px] tracking-[0.3em] uppercase text-cyan-400/80 hover:text-cyan-400 lg:hidden flex items-center gap-2"
               >
-                {/* 4. 使用数据中的双语标签 */}
+                {/* Internal layout marker. */}
                 {isExpanded ? opp.labels.showLess : opp.labels.readMore}
               </button>
             )}

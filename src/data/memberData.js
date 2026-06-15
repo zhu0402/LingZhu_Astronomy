@@ -7,7 +7,7 @@ export const memberData = {
       title: "Group leader",
       email: "lzhu@shao.ac.cn",
       photo: "assets/members/LZ.jpeg",
-      // 新增链接字段
+      // Implementation note.
       cvLink: "http://cosmos.shao.ac.cn/lingzhu/CV_LingZhu_2025.pdf", 
       viewCV: "View Personal CV",
       bio: "Hi, I am Ling Zhu, I have led this research group in Shanghai Astronomical Observatory since 2018...",

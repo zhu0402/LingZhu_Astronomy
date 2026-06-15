@@ -1,6 +1,6 @@
 // src/data/zh/memberData.js
 export const memberData = {
-  // 教师/组长 (Faculty)
+  // Implementation note.
   faculty: [
     {
       id: "ling-zhu",
@@ -26,7 +26,7 @@ export const memberData = {
     }
   ],
 
-  // 博士后与学生 (Postdocs & Students)
+  // Implementation note.
   postdocsAndStudents: [
     {
       id: "yunpeng-jin",
@@ -35,7 +35,7 @@ export const memberData = {
       title: "博士后",
       email: "jinyunpeng@shao.ac.cn",
       photo: "assets/members/Jin.png",
-      bio: "专注于星系动力学结构研究，利用来自 CALIFA 和 MaNGA 巡天的宽场面源光谱数据。", // 直译自英文版 bio
+      bio: "专注于星系动力学结构研究，利用来自 CALIFA 和 MaNGA 巡天的宽场面源光谱数据。", // Implementation note.
       direction: "动力学结构, CALIFA, MaNGA 巡天数据研究"
     },
     {
@@ -45,7 +45,7 @@ export const memberData = {
       title: "博士后",
       email: "yangchengqun@shao.ac.cn",
       photo: "assets/members/YangCQ.png",
-      bio: "通过研究银河系晕的性质和星流，重构银河系的吸积历史。", // 直译自英文版 bio
+      bio: "通过研究银河系晕的性质和星流，重构银河系的吸积历史。", // Implementation note.
       direction: "银河系晕, 星流"
     },
     {
@@ -55,7 +55,7 @@ export const memberData = {
       title: "博士研究生",
       email: "zhangle@shao.ac.cn",
       photo: "assets/members/LeZhang.png",
-      bio: "探索驱动星系结构形成和长期演化的基本物理过程。", // 直译自英文版 bio
+      bio: "探索驱动星系结构形成和长期演化的基本物理过程。", // Implementation note.
       direction: "星系结构形成与演化"
     },
     {
@@ -65,7 +65,7 @@ export const memberData = {
       title: "博士研究生",
       email: "leiyu20@mails.ucas.ac.cn",
       photo: "assets/members/YuLei.jpeg",
-      bio: "分析星系中暗物质的空间分布，以限制现代宇宙学模型。", // 直译自英文版 bio
+      bio: "分析星系中暗物质的空间分布，以限制现代宇宙学模型。", // Implementation note.
       direction: "星系暗物质分布"
     },
     {
@@ -75,7 +75,7 @@ export const memberData = {
       title: "博士研究生",
       email: "shihanjing21@mails.ucas.ac.cn",
       photo: "assets/members/Shi.jpeg",
-      bio: "研究宿主星系与其中心超大质量黑洞之间复杂的协同演化联系。", // 直译自英文版 bio
+      bio: "研究宿主星系与其中心超大质量黑洞之间复杂的协同演化联系。", // Implementation note.
       direction: "星系与中心黑洞的协同演化"
     },
     {
@@ -85,12 +85,12 @@ export const memberData = {
       title: "硕士研究生",
       email: "cairunsheng@shao.ac.cn",
       photo: "assets/members/Cai.png",
-      bio: "开发新的观测示踪工具，以揭示附近星系复杂的合并与组装历史。", // 直译自英文版 bio
+      bio: "开发新的观测示踪工具，以揭示附近星系复杂的合并与组装历史。", // Implementation note.
       direction: "揭开星系合并的历史"
     }
   ],
 
-  // 往届成员 (Former Members)
+  // Implementation note.
   former: [
     {
       id: "yuchen-ding",
@@ -98,7 +98,7 @@ export const memberData = {
       secondaryName: "Yuchen Ding",
       title: "博士 (2019-2024)",
       photo: "assets/members/YC.png",
-      bio: "利用 MaNGA 巡天数据完成了关于星系动力学的博士研究。", // 直译自英文版 bio
+      bio: "利用 MaNGA 巡天数据完成了关于星系动力学的博士研究。", // Implementation note.
       destination: "利物浦约翰摩尔斯大学 博士后",
       direction: "动力学结构, CALIFA, MaNGA"
     },
@@ -108,7 +108,7 @@ export const memberData = {
       secondaryName: "Behzad Tahmasebzade",
       title: "博士 (2017-2022)",
       photo: "assets/members/behzadpic.jpeg",
-      bio: "专注于应用于外部棒旋星系的动力学建模。", // 直译自英文版 bio
+      bio: "专注于应用于外部棒旋星系的动力学建模。", // Implementation note.
       destination: "密歇根大学 博士后",
       direction: "星系团动力学"
     },
@@ -118,7 +118,7 @@ export const memberData = {
       secondaryName: "Sunshun Yuan",
       title: "硕士 (2019-2022)",
       photo: "assets/members/Yuan.jpeg",
-      bio: "对仙女座星系 (M31) 中的暗物质分布进行了系统研究。", // 直译自英文版 bio
+      bio: "对仙女座星系 (M31) 中的暗物质分布进行了系统研究。", // Implementation note.
       destination: "就职于工业界",
       direction: "M31中的暗物质分布"
     }

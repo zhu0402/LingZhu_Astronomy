@@ -14,17 +14,16 @@ export default function App() {
 
   return (
     <div className="bg-[#101b39] min-h-screen text-[#e9e8ee] selection:bg-cyan-500/30 overflow-x-hidden font-sans relative">
-      
-      {/* 核心：将切换逻辑和 header 传入 Navbar */}
+      {/* Pass language switching and header configuration into the navbar. */}
       <Navbar onToggleLanguage={toggleLanguage} currentLang={lang} header={header} />
-      
-      {/* 关键：pointer-events-none 确保装饰线条不遮挡 Nav 的交互 */}
+
+      {/* Keep decorative lines from blocking navbar interactions. */}
       <div className="fixed inset-0 pointer-events-none z-50">
         <div className="absolute left-8 lg:left-16 top-0 w-px h-full bg-gradient-to-b from-transparent via-white/5 to-transparent"></div>
-        {/* ... 其他装饰 */}
+        {/* Additional decorative elements can be added here. */}
       </div>
 
-      {/* 点击 Logo 时，由于 reload()，Hero 会重新播放入场动画 */}
+      {/* Hero is keyed by language so translated content remounts cleanly. */}
       <section id="home">
         <Hero key={`hero-${lang}`} />
       </section>
@@ -38,7 +37,7 @@ export default function App() {
               {resConfig?.sectionTitle}
             </h2>
           </ScrollReveal>
-          <Research key={`res-list-${lang}`} /> 
+          <Research key={`res-list-${lang}`} />
         </section>
 
         <section id="member" className="scroll-mt-40">

@@ -27,7 +27,7 @@ export default function Footer() {
   return (
     <footer className="relative bg-[#050a18] pt-40 pb-16 border-t border-white/5 mt-60">
       
-      {/* 1. 返回顶部按钮 - 保持 text-sm 且颜色明亮 */}
+      {/* Internal layout marker. */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <button onClick={scrollToTop} className="group flex flex-col items-center gap-4 transition-all">
           <div className="relative w-px h-16 bg-white/10 overflow-hidden">
@@ -43,7 +43,7 @@ export default function Footer() {
       <div className="max-w-[1440px] mx-auto px-10 sm:px-16 lg:px-32">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-16 lg:gap-32">
           
-          {/* 2. 品牌与地址区 */}
+          {/* Internal layout marker. */}
           <div className="max-w-2xl space-y-8">
             <div className="space-y-4">
               <h2 className={`text-3xl ${footer.styles.orgFontWeight || 'font-[300]'} ${footer.styles.brandTracking} text-white leading-tight`}>
@@ -68,7 +68,7 @@ export default function Footer() {
                 <span className="text-cyan-400 mr-2 font-mono text-[10px] opacity-90">
                   {footer.brand.locationLabel || "LOC."}
                 </span>
-                {/* 使用下划线或其他视觉反馈提示这是个链接 */}
+                {/* Internal layout marker. */}
                 <span className="border-b border-transparent hover:border-cyan-400/50">
                   {adaptiveTruncate(footer.brand.address, footer.constraints.addressMax, footer.constraints.mobileAddressLimit)}
                 </span>
@@ -76,7 +76,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* 3. 导航区 */}
+          {/* Internal layout marker. */}
           <div className="flex flex-wrap gap-x-24 gap-y-10">
             {footer.sections.map((section, idx) => (
               <div key={idx} className="space-y-6">
@@ -102,7 +102,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* 4. 底部版权与标签 - 颜色提亮为 text-gray-300 */}
+        {/* Internal layout marker. */}
         <div className="mt-32 pt-12 border-t border-white/[0.05] flex flex-col md:flex-row justify-between items-start gap-6">
           <p className={`${footer.styles.copyrightSize} ${footer.styles.navLinkTracking} text-gray-300 font-[300]`}>
             © {new Date().getFullYear()} {footer.copyright}

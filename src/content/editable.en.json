@@ -118,6 +118,44 @@
     },
     "copyright": "Galactic Dynamics Group. All rights reserved.",
     "tagline": "Engineered with Precision",
-    "location": "Shanghai, CN"
+    "location": "Shanghai, CN",
+    "sections": [
+      {
+        "title": "Navigation",
+        "links": [
+          {
+            "name": "About Group",
+            "url": "#about"
+          },
+          {
+            "name": "Research Archive",
+            "url": "#research"
+          },
+          {
+            "name": "Team Members",
+            "url": "#member"
+          },
+          {
+            "name": "Opportunities",
+            "url": "#opportunities"
+          }
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          {
+            "name": "SHAO Website",
+            "url": "https://www.shao.ac.cn",
+            "external": true
+          },
+          {
+            "name": "CAS Global",
+            "url": "https://english.cas.cn",
+            "external": true
+          }
+        ]
+      }
+    ]
   }
 }

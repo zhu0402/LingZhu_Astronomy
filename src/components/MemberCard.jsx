@@ -10,7 +10,7 @@ export default function MemberCard({
   return (
     <div className="flex flex-col md:flex-row items-center md:items-start gap-8 p-8 bg-white/5 rounded-2xl border border-white/10 hover:border-white/30 transition-all duration-700 group relative overflow-hidden h-fit">
       
-      {/* 照片容器 */}
+      {/* Internal layout marker. */}
       <div className="w-40 aspect-[40/52] flex-shrink-0 overflow-hidden rounded-lg border-2 border-white/10 bg-[#0a1126] touch-none select-none">
         <img 
           src={photo} 
@@ -18,9 +18,9 @@ export default function MemberCard({
           loading="lazy"
           decoding="async"
           className="w-full h-full object-cover transition-all duration-1000 transform-gpu
-               /* 默认状态：低亮度 */
+               /* Implementation note. */
                brightness-[0.75] saturate-[0.8] scale-100
-               /* 悬停与激活状态（兼容触摸屏）：增亮并放大 */
+               /* Implementation note. */
                group-hover:brightness-100 group-hover:saturate-100 group-hover:scale-110
                group-active:brightness-100 group-active:saturate-100 group-active:scale-110"
           onContextMenu={(e) => e.preventDefault()}
@@ -29,14 +29,14 @@ export default function MemberCard({
 
       <div className="flex-1 text-center md:text-left min-w-0 w-full">
         <div className="mb-4">
-          {/* 姓名渲染区域：改为垂直排列并添加溢出裁剪 */}
+          {/* Internal layout marker. */}
           <div className="flex flex-col gap-1">
-            {/* Primary Name: 主姓名，加粗，不换行 */}
+            {/* Internal layout marker. */}
             <h3 className="text-[1.2rem] sm:text-[1.5rem] font-[200] text-white tracking-widest truncate" title={primaryName}>
               {primaryName}
             </h3>
             
-            {/* Secondary Name: 次姓名，放在下一行，颜色变淡，不换行 */}
+            {/* Internal layout marker. */}
             <div className="text-lg text-cyan-500/40 font-[100] tracking-widest truncate" title={secondaryName}>
               {secondaryName}
             </div>

@@ -3,12 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from '../hooks/useTranslation'; 
 
 export default function About() {
-  // 核心：调用翻译钩子获取最新数据
+  // Implementation note.
   const { about, isEnglish } = useTranslation(); 
   const [isExpanded, setIsExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // 当语言切换时，重置折叠状态
+  // Implementation note.
   useEffect(() => {
     if (isMobile) {
       setIsExpanded(false);
@@ -20,14 +20,14 @@ export default function About() {
       const threshold = about?.constraints?.thresholdWidth || 1024;
       const mobile = window.innerWidth < threshold;
       setIsMobile(mobile);
-      if (!mobile) setIsExpanded(true); // 桌面端强制展开
+      if (!mobile) setIsExpanded(true); // Implementation note.
     };
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, [about?.constraints]);
 
-  // 定义局部动画
+  // Implementation note.
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { 
@@ -37,13 +37,13 @@ export default function About() {
     }
   };
 
-  // 如果数据还没加载出来，返回空（防止报错）
+  // Implementation note.
   if (!about) return null;
 
   return (
     <section 
       id="about" 
-      key={isEnglish ? 'about-en' : 'about-zh'} // 关键：语言切换时重新渲染组件
+      key={isEnglish ? 'about-en' : 'about-zh'} // Implementation note.
       className={`relative z-20 w-full bg-[#101b39] overflow-hidden ${about.styles?.sectionPadding || 'py-32'}`}
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(34,211,238,0.03),transparent)] pointer-events-none"></div>
@@ -51,7 +51,7 @@ export default function About() {
       <div className="max-w-[1440px] mx-auto px-6 sm:px-16 lg:px-32 relative z-10">
         <div className="max-w-5xl">
           
-          {/* 1. 顶部标识 */}
+          {/* Internal layout marker. */}
           <motion.div 
             initial="hidden"
             whileInView="visible"
@@ -65,7 +65,7 @@ export default function About() {
             <div className="h-px w-10 bg-white/10"></div>
           </motion.div>
 
-          {/* 2. 标题 */}
+          {/* Internal layout marker. */}
           <motion.h2 
             initial="hidden"
             whileInView="visible"
@@ -82,7 +82,7 @@ export default function About() {
           </motion.h2>
 
           <div className="space-y-12 lg:space-y-20 max-w-4xl"> 
-            {/* 3. 描述正文 */}
+            {/* Internal layout marker. */}
             <motion.div 
               initial="hidden"
               whileInView="visible"
@@ -107,7 +107,7 @@ export default function About() {
               )}
             </motion.div>
 
-            {/* 4. 核心领域 */}
+            {/* Internal layout marker. */}
             <div className="relative">
               <AnimatePresence initial={false}>
                 {(isExpanded || !isMobile) && (

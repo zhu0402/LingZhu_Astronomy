@@ -4,7 +4,7 @@
 :root {
   --nav-background: rgba(5, 10, 24, 0.8);
   --background: #050a18;
-  --p-color: #e9e8ee; 
+  --p-color: #e9e8ee;
 }
 
 body {
@@ -13,20 +13,20 @@ body {
   background-color: var(--background);
   color: var(--p-color);
   overflow-x: hidden;
-  -webkit-font-smoothing: antialiased; /* 让细字体在深色背景下更清晰 */
+  -webkit-font-smoothing: antialiased; /* Improves light-weight type on dark backgrounds. */
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* 针对“细长感”的自定义工具类 */
+/* Custom utility for a condensed display feel. */
 .font-condensed {
-  letter-spacing: -0.05em; /* 紧缩字间距营造垂直拉伸感 */
+  letter-spacing: -0.05em; /* Tightens spacing for a taller visual rhythm. */
   line-height: 0.95;
 }
 
-/* 优雅的减速曲线 */
+/* Smooth reveal easing. */
 .reveal-transition {
   transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }

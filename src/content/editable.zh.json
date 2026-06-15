@@ -120,6 +120,44 @@
     },
     "copyright": "星系动力学研究组. 保留所有权利.",
     "tagline": "以精准模型定义宇宙之美",
-    "location": "中国 · 上海"
+    "location": "中国 · 上海",
+    "sections": [
+      {
+        "title": "导航",
+        "links": [
+          {
+            "name": "关于小组",
+            "url": "#about"
+          },
+          {
+            "name": "科研存档",
+            "url": "#research"
+          },
+          {
+            "name": "团队成员",
+            "url": "#member"
+          },
+          {
+            "name": "加入我们",
+            "url": "#opportunities"
+          }
+        ]
+      },
+      {
+        "title": "资源",
+        "links": [
+          {
+            "name": "上海天文台官网",
+            "url": "https://www.shao.ac.cn",
+            "external": true
+          },
+          {
+            "name": "中国科学院",
+            "url": "https://www.cas.cn",
+            "external": true
+          }
+        ]
+      }
+    ]
   }
 }

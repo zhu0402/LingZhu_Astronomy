@@ -10,11 +10,11 @@ export default function Navbar({ onToggleLanguage, currentLang, header }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // 核心修复：点击 Logo 时，先变色再跳转/刷新
+  // Implementation note.
   const handleLogoClick = (e) => {
     e.preventDefault();
     
-    // 强制滚动到顶部
+    // Implementation note.
     window.scrollTo({ top: 0, behavior: 'smooth' });
     
     window.location.hash = '';
@@ -31,7 +31,7 @@ export default function Navbar({ onToggleLanguage, currentLang, header }) {
       }`}>
         <div className="max-w-[1440px] mx-auto px-10 sm:px-16 lg:px-32 flex justify-between items-center">
           
-          {/* Logo 区域：添加了 active:text-cyan-400 以支持手机点击变色 */}
+          {/* Internal layout marker. */}
           <a href="#" onClick={handleLogoClick} className="flex flex-col group select-none cursor-pointer outline-none">
             <span className={`text-3xl ${header.styles.logoLine1Font} text-white tracking-[0.15em] transition-colors duration-500 group-hover:text-cyan-400 active:text-cyan-400`}>
               {header.logo.line1}
@@ -49,7 +49,7 @@ export default function Navbar({ onToggleLanguage, currentLang, header }) {
             </div>
           </a>
 
-          {/* 桌面端导航 */}
+          {/* Internal layout marker. */}
           <div className="hidden lg:flex items-center gap-10">
             <ul className="flex items-center gap-10">
               {header.navLinks.map((link) => (
@@ -75,7 +75,7 @@ export default function Navbar({ onToggleLanguage, currentLang, header }) {
             </div>
           </div>
 
-          {/* 移动端汉堡菜单 */}
+          {/* Internal layout marker. */}
           <button className="lg:hidden w-8 h-8 flex flex-col justify-center items-end gap-2.5 relative z-[1001]" onClick={() => setActive(!active)}>
             <span className={`h-[1.5px] bg-white transition-all duration-300 ${active ? 'w-8 rotate-45 translate-y-[6px]' : 'w-8'}`}></span>
             <span className={`h-[1.5px] bg-white transition-all duration-300 ${active ? 'opacity-0' : 'w-5'}`}></span>
@@ -83,7 +83,7 @@ export default function Navbar({ onToggleLanguage, currentLang, header }) {
           </button>
         </div>
 
-        {/* 移动端全屏菜单 */}
+        {/* Internal layout marker. */}
         <div className={`fixed inset-0 h-screen bg-[#050a18]/98 backdrop-blur-3xl flex flex-col items-center justify-center transition-all lg:hidden ${
           active ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
         }`}>
@@ -129,7 +129,7 @@ export default function Navbar({ onToggleLanguage, currentLang, header }) {
           0% { left: -100%; }
           100% { left: 100%; }
         }
-        /* 手机端点击时去除系统默认的蓝色高亮，使用我们自定义的变色 */
+        /* Implementation note. */
         a, button { -webkit-tap-highlight-color: transparent; }
       `}</style>
     </>

@@ -31,7 +31,7 @@ export const siteContent = {
   },
 
   hero: {
-    // 修改后：去掉了开头的 /
+    // Implementation note.
     backgroundImage: "assets/icons/background-img.jpg",
     subtitleStructure: [
       { text: "利用先进动力学模型与观测数据，揭示星系的形成与演化奥秘" },

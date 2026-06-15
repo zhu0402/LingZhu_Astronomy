@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import { useTranslation } from '../hooks/useTranslation';
 
 export default function Hero() {
-  // 修改点 1：解构出 isEnglish，让组件感知语言变化
+  // Implementation note.
   const { hero, isEnglish } = useTranslation();
   const [showGlow, setShowGlow] = useState(false); 
   const [isGlowFinished, setIsGlowFinished] = useState(false); 
 
-  // 修改点 2：语言切换时，重置动画状态
+  // Implementation note.
   useEffect(() => {
     setShowGlow(false);
     setIsGlowFinished(false);
@@ -33,7 +33,7 @@ export default function Hero() {
   if (!hero) return null;
 
   return (
-    // 修改点 3：添加关键 key。key 变化 = 组件强制重绘 = 文字更新
+    // Implementation note.
     <section 
       key={isEnglish ? 'hero-en' : 'hero-zh'}
       className="relative min-h-screen w-full flex flex-col justify-center bg-[#050a18] overflow-hidden"

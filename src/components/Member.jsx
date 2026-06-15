@@ -60,21 +60,21 @@ export default function Member() {
         );
       })}
 
-      {/* 找到 Member.jsx 底部 allMembersFlat.length > visibleLimit 的部分 */}
+      {/* Internal layout marker. */}
       {allMembersFlat.length > visibleLimit && (
         <div className="pt-20 flex justify-center">
           <button 
             onClick={() => setVisibleLimit(prev => prev + 4)} 
             className="group flex flex-col items-center gap-4 transition-all"
           >
-            {/* 1. 带有扫光效果的文字 */}
+            {/* Internal layout marker. */}
             <span className="text-[10px] tracking-[0.5em] text-cyan-400/40 group-hover:text-cyan-400 uppercase font-[200] relative px-4">
                 {memConfig.exploreText}
-                {/* 扫光遮罩 */}
+                {/* Internal layout marker. */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
             </span>
 
-            {/* 2. 垂直流星线条 */}
+            {/* Internal layout marker. */}
             <div className="relative w-px h-10 bg-white/10 overflow-hidden">
                 <motion.div 
                   initial={{ y: "-100%" }} 
@@ -84,7 +84,7 @@ export default function Member() {
                 />
             </div>
 
-            {/* 3. 底部发光脉冲点 */}
+            {/* Internal layout marker. */}
             <div className="w-1.5 h-1.5 rounded-full bg-cyan-500 shadow-[0_0_12px_#22d3ee] animate-pulse"></div>
           </button>
         </div>
