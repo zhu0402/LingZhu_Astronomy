@@ -35,7 +35,7 @@
   },
   "about": {
     "archiveLabel": "RESEARCH MISSION // 01",
-    "sectionTitle": "About Us",
+    "sectionTitle": "About the Group",
     "titleStructure": [
       {
         "text": "Advancing our understanding of ",
@@ -58,7 +58,7 @@
         "break": false
       }
     ],
-    "description": "Our group at Shanghai Astronomical Observatory (SHAO) specializes in the physical processes that shape galaxies across cosmic time. By bridging the gap between massive cosmological simulations and high-precision sky surveys, we utilize advanced dynamical modeling to decode the complex fossil records of galaxies and probe the underlying nature of dark matter.",
+    "description": "Welcome to the homepage of the galaxy structure and dynamics group. We are an independent research group in Shanghai Astronomical Observatory led by Ling Zhu. Our research mostly focuses on galaxy structure and dynamics, including but not limited to\n\nDevelopment of chemo-dynamics models\nGalaxy structure formation and galaxy assembly history\nGalaxy structure formation in different environments\nProbing dark matter distribution in nearby galaxies combining stellar, GCs, PNe and HI kinematics\nSupermassive black hole mass estimation\nRecently, we developed a population-orbit superposition method, which can simultaneously fit the stellar luminosity distribution, kinematic, age and metallicity maps from IFU observations. Combining dynamics and stellar populations provides us unprecedented information of 'when' and 'how' the structures in a galaxy formed. We thus have been able to uncover the ancient merger events in nearby galaxies with IFU observations.",
     "labels": {
       "readMore": "Explore Full Mission",
       "showLess": "Condense View",
