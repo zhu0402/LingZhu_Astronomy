@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NETLIFY ? '/' : '/REACT2026/',
+  base: process.env.NETLIFY ? '/' : process.env.GITHUB_PAGES ? '/LingZhu_Astronomy/' : '/REACT2026/',
 })
