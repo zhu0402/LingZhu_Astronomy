@@ -6,7 +6,8 @@
       "authors": "Jin, Y., Zhu, L., et al. 2023",
       "description": "We apply a population-orbit superposition method to about 100 CALIFA galaxies, and finally colored their stellar orbits, which we obtained in Zhu+2018, with the information of stellar age. Thus we have been able to dynamically decompose the bulge, and quantify mass and stellar age of bulge for a large sample of galaxies. We find that massive bulges are usually older, while less massive bulges are younger. The CALIFA galaxies show bimodality in both the stellar mass and stellar age distributions, which indicates different formation scenarios of the low mass and high mass bulges.",
       "image": "assets/research/jin2023.png",
-      "link": "https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..95J/abstract"
+      "link": "https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..95J/abstract",
+      "imageCaption": ""
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "authors": "Chen, Z., Zhu, L., et al. 2022",
       "description": "Reconstructing the 3D intrinsic density distribution of a barred galaxy from the 2D image is challenging, but is a critical step for constructing galactic dynamical models. We present a method for deprojecting barred galaxies and validate the method by testing against mock images created from an N-body simulation with a peanut-shaped bar. Our model can generally recover the 3D density distribution of disk and inner barred bulge regions, and it supports the orbits that generate a boxy/peanut-shaped structure and an elongated bar similar to these in the true potential. ",
       "image": "assets/research/bar.jpeg",
-      "link": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.6209T%2F/abstract"
+      "link": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.6209T%2F/abstract",
+      "imageCaption": ""
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "authors": "Ning, Q., Zhu, L., et al. 2021",
       "description": "Using the data from the CALIFA IFU survey, we obtained the stellar orbit distribution of a large sample representative of the general properties of galaxies in the local universe. We have been able to provide a orbit-based 'Hubble sequence' which is a comprehensive, quantitatively description of galactic structures ( Zhu+2018, Nature Astronomy, 2, 233 ). We call it 'library of galaxy histories'.",
       "image": "assets/research/orbit2.jpeg",
-      "link": "https://www.mpia.de/news/science/2018-02-stellar-orbits"
+      "link": "https://www.mpia.de/news/science/2018-02-stellar-orbits",
+      "imageCaption": ""
     }
   ]
 }

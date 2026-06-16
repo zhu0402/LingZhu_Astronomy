@@ -6,6 +6,7 @@ export default function ResearchItem({
   title, 
   description, 
   image, 
+  imageCaption,
   link, 
   index, 
   isLastVisible, 
@@ -18,6 +19,7 @@ export default function ResearchItem({
   readLessText
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isImageOpen, setIsImageOpen] = useState(false);
   const bgColor = index % 2 === 0 ? 'bg-[#0a1229]' : 'bg-[#101b39]';
 
   // Implementation note.
@@ -60,9 +62,14 @@ export default function ResearchItem({
               <AnimatePresence>
                 {(isExpanded || (typeof window !== 'undefined' && window.innerWidth >= 1024)) && (
                   <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="pt-6 space-y-10">
-                    <div className="relative overflow-hidden border border-white/5 bg-[#050a18]/50 group">
+                    <button type="button" onClick={() => setIsImageOpen(true)} className="relative overflow-hidden border border-white/5 bg-[#050a18]/50 group block w-full text-left cursor-zoom-in">
                       <img src={image} alt={title} loading="lazy" decoding="async" className="w-full aspect-video lg:aspect-[21/9] object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-1000" />
-                    </div>
+                    </button>
+                    {imageCaption && (
+                      <p className="text-xs sm:text-sm text-slate-500 font-[300] leading-relaxed">
+                        {imageCaption}
+                      </p>
+                    )}
                     <a href={link} target="_blank" rel="noreferrer" className="text-[11px] font-[500] tracking-[0.3em] text-white/60 hover:text-cyan-400 transition-all uppercase inline-flex items-center gap-2">
                       {linkText} <span>→</span>
                     </a>
@@ -73,6 +80,30 @@ export default function ResearchItem({
           </div>
         </div>
       </div>
+
+      <AnimatePresence>
+        {isImageOpen && (
+          <motion.button
+            type="button"
+            onClick={() => setIsImageOpen(false)}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-[#020617]/90 px-4 py-8 cursor-zoom-out"
+            aria-label="Close image preview"
+          >
+            <motion.img
+              src={image}
+              alt={title}
+              initial={{ opacity: 0, scale: 0.96 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.96 }}
+              transition={{ duration: 0.25 }}
+              className="max-w-[min(92vw,1200px)] max-h-[min(86vh,760px)] object-contain border border-white/10 shadow-2xl"
+            />
+          </motion.button>
+        )}
+      </AnimatePresence>
 
       {/* Internal layout marker. */}
       {isLastVisible && hasMore && (
