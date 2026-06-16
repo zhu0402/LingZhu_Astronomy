@@ -113,7 +113,7 @@
     "brand": {
       "line1": "星系动力学组",
       "line2": "上海天文台",
-      "orgName": "中国科学院上海天文台",
+      "orgName": "天文楼16层，中国科学院上海天文台",
       "address": "上海市徐汇区南丹路80号, 200030",
       "locationLabel": "地址",
       "mapUrl": "https://api.map.baidu.com/direction?destination=上海天文台&mode=driving&region=上海&output=html&src=webapp.baidu.openAPIdemo"
