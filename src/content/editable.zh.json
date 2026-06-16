@@ -126,20 +126,16 @@
         "title": "相关链接",
         "links": [
           {
-            "name": "关于小组",
-            "url": "#about"
+            "name": "上海天文台天体物理研究室",
+            "url": "https://shao.cas.cn/astro/"
           },
           {
-            "name": "科研存档",
-            "url": "#research"
+            "name": "中国科学院上海天文台",
+            "url": "https://www.shao.ac.cn/"
           },
           {
-            "name": "团队成员",
-            "url": "#member"
-          },
-          {
-            "name": "加入我们",
-            "url": "#opportunities"
+            "name": "中国科学院大学",
+            "url": "https://www.ucas.ac.cn/"
           }
         ]
       },
@@ -147,13 +143,13 @@
         "title": "其他资源",
         "links": [
           {
-            "name": "上海天文台官网",
-            "url": "https://www.shao.ac.cn",
+            "name": "天体物理学数据系统",
+            "url": "https://ui.adsabs.harvard.edu/",
             "external": true
           },
           {
-            "name": "中国科学院",
-            "url": "https://www.cas.cn",
+            "name": "天文图片",
+            "url": "https://apod.nasa.gov/apod/",
             "external": true
           }
         ]
